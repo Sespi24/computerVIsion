@@ -114,7 +114,18 @@ ul {
 }
 li {
     padding-bottom:20px;
-    
+}
+dt, dd {
+        padding-bottom:20px;
+        font-size: 24px;
+        line-height: 1.5;
+        font-family:'Oranienbaum';
+        letter-spacing: 1.3px;
+        padding-left:1%;
+        padding-bottom:0%;
+}
+dd {
+    padding-left:2%;
 }
 .icon {
     height:65px;
@@ -126,4 +137,9 @@ li {
 .profilePic {
     width:30vw;
     height:55vh;
+}
+#figure {
+    width:30vw;
+    height:auto;
+    float:right;
 }

@@ -30,34 +30,69 @@
                     <h2>
                         Project #0 (?): VSCODE AND GITHUB
                     </h2>
-                    <p style="padding-left:1%">
-                        For me to begin my programming journey in Python, I needed to get to know my tools first. GitHub is a programming standard, and I chose to use VisualStudios Code for my IDE because of how well it fits with Windows systems. While this is not a "project" of sorts I would be remissed if I did not at least mention it here at the start because of the lessons it taught. 1) Seemingly random errors are very frustrating. Sometimes the best way to approach an issue is take a step back and not try the same thing over and over. And 2) turning towards others for help is crucial. Asking questions, prodding, and actually reading tutorials instead of copying and pasting code snippets is huge. As the saying goes, I am standing on the shoulders of giants, so through some debugging and assistance, I was able to tackle programming milestones.
-                    </p>
+                    <div style="padding-left:1%">
+                        <p style="padding-bottom:1%;">
+                            For me to begin my programming journey in Python, I needed to get to know my tools first: GitHub and Visual Studios Code (VS Code). GitHub is a programming standard, and I chose to use VS Code as my IDE because of how well it meshes with a Windows system. While this "project" is not a project of sorts, I would be remissed if I did not at least mention it  because of the lessons it taught me. 
+                        </p>
+                        <dl>
+                            <dt>1) Seemingly random errors are very frustrating.</dt>
+                                <dd>Sometimes the best way to approach an issue is take a step back to get a new perspective instead of trying the same thing over and over.</dd>
+                            <dt>And 2) turning towards others for help is crucial.</dt> 
+                                <dd>Asking questions, prodding, and actually reading tutorials instead of copying and pasting code snippets is huge. As the saying goes, I am standing on the shoulders of giants.</dd>
+                        </dl>
+                        <p style="padding-top:1%">
+                            So, through some debugging and assistance, I was able to tackle the setup and move onto bigger programming milestones.
+                        </p>
+                    </div>
                 </div>
                 <div class="main-content">
                     <h2>
                         Project #1: APIS AND DATA VISUALIZATION
                     </h2>
-                    <p style="padding-left:1%">
-                        The first big project was communicating with and pulling information from a NBA API, utilizing NumPy to give some summary statistics, and visualize some of the data with MatPlotLib. Shown to the right is an image of the two graphs made from the NBA data.
-                    </p>
-                    <img src="" style="float:right;">
+                    <div style="overflow: auto;">
+                        <img src="{{ url_for('static', filename='image/Figure_Api-Data.png') }}" id="figure">
+                        <p style="padding-left:1%;">
+                            The first big project was using APIs to gather and display information. I communicated with and pulled information from a NBA API using the Requests library, utilized NumPy to calculate some summary statistics, and visualized the data with Matplotlib graphs. Shown to the right is an image of the two graphs made from the NBA data and <a href="{{ url_for('static', filename='output.xlsx') }}" style="padding-bottom:20px;font-size: 24px;line-height: 1.5;font-family:'Oranienbaum';letter-spacing: 1.3px;">here</a> is a generated excel file of the summary statistics.
+                        </p>
+                    </div>
                 </div>
                 <div style="background-color:cornsilk;" class="main-content">
                     <h2>
                         Project #2: IMAGE MANIPULATION
                     </h2>
-                    <p>
-                        For computer vision, we need to first have the ability to manipulate images. In this project, I used the OS library to allow the user to select an "images" folder. Then, OpenCV and NumPy manipulated the colors of images. Finally, MatPlotLib allowed the user to see the manipulated image (although I could have used OpenCV for the same purpose). To the left is an example of the manipulated image. 
-                    </p>
+                    <div>
+                        <div style="padding-left:1%;padding-bottom:2%;">
+                            <p style="padding-bottom:1%;">
+                                Before moving onto computer vision, we need to first have the ability to manipulate images. In this project, I used the OS library to allow the user to select an "images" folder. Then, OpenCV and NumPy manipulated the colors of images through swapping matrix values and masking. Finally, Matplotlib allowed the user to see the manipulated image (although I could have used OpenCV for the same purpose). Below is an example image and three manipulated versions:  
+                            </p>
+                            <dl>
+                                <dt>
+                                    The first image is the normal red-green-blue (RGB) image
+                                </dt>
+                                <dt>
+                                    The second was switched from an RGB to a hue-saturation-value (HSV) color space
+                                </dt>
+                                <dt>
+                                    The third is a mask of the first image, capturing most of the person's skin tone
+                                </dt>
+                                <dt>
+                                    The fourth is a negative version of the image (all values are reversed)
+                                </dt>
+                            </dl>
+                        </div>
+                        <img src="{{ url_for('static', filename='image/Figure_Image-Manip.png') }}">
+                    </div>
+                    
                 </div>
                 <div class="main-content">
                     <h2>
                         Project #3: THIS FLASK WEB APPLICATION!
                     </h2>
-                    <p style="padding-left:1%">
-                        Yes, even this web application is one of my projects. As mentioned in the "ABOUT" tab, I already know HTML and CSS, but I learned Flask as a way to host a local server and implement python into a standard HTML web page. There is definitely more integration that I can do with this web app, but time prevented me from fully expanding the python I learned to website design.
-                    </p>
+                    <div>
+                        <p style="padding-left:1%">
+                            Yes, even this web application is one of my projects. As mentioned in the "ABOUT" tab, I already knew HTML and CSS coming in, but I learned Flask as a way to host a local server and implement python into a standard HTML web page. There is definitely more integration that I can do with this web app, but time prevented me from fully expanding the python I learned into website design.
+                        </p>
+                    </div>
                 </div>
             </div>
         </content>
