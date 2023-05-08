@@ -1,0 +1,129 @@
+* {
+    width: 100%;
+    margin: 0%;
+    color:#343434;
+    font-family: 'Marcellus';
+    font-size:25px;
+}
+body {
+    display: inline-grid;
+    grid-template-areas: 'header' 'nav' 'content' 'footer';
+    min-height: 100vh;
+}
+header {
+    background-color: seashell;
+    grid-area: header;
+    text-align: center;
+    line-height:250px;
+}
+header>h1 {
+    font-family: 'Montez';
+    font-size:100px;
+    font-style: italic;
+    display:block;
+    width:100%;
+    height:100%; 
+    float:left;
+}
+nav {
+    background-color: #e9d37c;
+    display: inline-grid;
+    grid-template-areas: 'nav0 nav1 nav2 nav3 nav4';
+    height:10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+content {
+    grid-area:content;
+    display:block;
+    background-color:#c9c1a9;
+}
+.main {
+    float:left;
+    width:100%;
+    min-height:50vh;
+}
+.main-content {
+    padding:4%;
+    width:92%;
+}
+.main-aside {
+    float:left;
+    padding:4%;
+    width:55%;
+    min-height:50vh;
+}
+.aside {
+    background-color: cornsilk/*#f4e9be*/;
+    float:right;
+    width:35%;
+    height:100%;
+}
+.aside > img {
+    border: 3px solid seashell;
+    margin: 8% 5%;
+}
+footer {
+    background-color: #e9d37c;
+    grid-area:footer;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:block;
+    width:100%;
+    height:15vh; 
+    float:left;
+    text-align: center;
+    line-height:15vh;
+}
+a.divlink { 
+    display:block;
+    width:100%;
+    height:100%; 
+    float:left;
+    text-align: center;
+    line-height:10vh;
+}
+a.divlink:link, a.divlink:visited { 
+    color: black;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+a.divlink:hover { 
+    text-decoration: underline;
+    font-size: 30px;
+}
+a.active {
+    text-decoration: underline;
+}
+p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family:'Oranienbaum';
+    letter-spacing: 1.3px;
+    padding-bottom: 5vh;
+}
+h6 {
+    font-size: 14px;
+}
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+}
+li {
+    padding-bottom:20px;
+    
+}
+.icon {
+    height:65px;
+    width:75px;
+    vertical-align: text-top;
+    margin-right:25px;
+    box-shadow: 0 0 0 0;
+}
+.profilePic {
+    width:30vw;
+    height:55vh;
+}

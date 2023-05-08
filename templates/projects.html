@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects — Seth Spickard</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oranienbaum">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Seth Spickard
+            </h1>
+        </header>
+        <content>
+            <div class="main">
+                <div class="main-content">
+                    <p>
+                        Welcome to the Projects tab! While the page is broken down into each one of my projects over the spring semester, this page serves not only as a collection of products but also as a timeline to see how far I have come.
+                    </p>
+                </div>
+                <div style="background-color:cornsilk;" class="main-content">
+                    <h2>
+                        Project #0 (?): VSCODE AND GITHUB
+                    </h2>
+                    <p style="padding-left:1%">
+                        For me to begin my programming journey in Python, I needed to get to know my tools first. GitHub is a programming standard, and I chose to use VisualStudios Code for my IDE because of how well it fits with Windows systems. While this is not a "project" of sorts I would be remissed if I did not at least mention it here at the start because of the lessons it taught. 1) Seemingly random errors are very frustrating. Sometimes the best way to approach an issue is take a step back and not try the same thing over and over. And 2) turning towards others for help is crucial. Asking questions, prodding, and actually reading tutorials instead of copying and pasting code snippets is huge. As the saying goes, I am standing on the shoulders of giants, so through some debugging and assistance, I was able to tackle programming milestones.
+                    </p>
+                </div>
+                <div class="main-content">
+                    <h2>
+                        Project #1: APIS AND DATA VISUALIZATION
+                    </h2>
+                    <p style="padding-left:1%">
+                        The first big project was communicating with and pulling information from a NBA API, utilizing NumPy to give some summary statistics, and visualize some of the data with MatPlotLib. Shown to the right is an image of the two graphs made from the NBA data.
+                    </p>
+                    <img src="" style="float:right;">
+                </div>
+                <div style="background-color:cornsilk;" class="main-content">
+                    <h2>
+                        Project #2: IMAGE MANIPULATION
+                    </h2>
+                    <p>
+                        For computer vision, we need to first have the ability to manipulate images. In this project, I used the OS library to allow the user to select an "images" folder. Then, OpenCV and NumPy manipulated the colors of images. Finally, MatPlotLib allowed the user to see the manipulated image (although I could have used OpenCV for the same purpose). To the left is an example of the manipulated image. 
+                    </p>
+                </div>
+                <div class="main-content">
+                    <h2>
+                        Project #3: THIS FLASK WEB APPLICATION!
+                    </h2>
+                    <p style="padding-left:1%">
+                        Yes, even this web application is one of my projects. As mentioned in the "ABOUT" tab, I already know HTML and CSS, but I learned Flask as a way to host a local server and implement python into a standard HTML web page. There is definitely more integration that I can do with this web app, but time prevented me from fully expanding the python I learned to website design.
+                    </p>
+                </div>
+            </div>
+        </content>
+        <nav>
+            <div style="grid-area: nav1;">
+                <a class="divlink" href="/">About</a>
+            </div>
+            <div style="grid-area: nav2;">
+                <a class="divlink" href="/projects">Projects</a>
+            </div>
+            <div style="grid-area: nav3;">
+                <a class="divlink" href="/contact">Contact</a>
+            </div>
+        </nav>
+        <footer>
+            <h6>
+                Copyright 2023 Seth Spickard
+            </h6>
+        </footer>
+    </body>
+</html>

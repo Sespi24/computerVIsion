@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact — Seth Spickard</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oranienbaum">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Seth Spickard
+            </h1>
+        </header>
+        <content>
+            <div class="main">
+                <div class="main-content">
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/phone-icon.png') }}" class="icon">Phone: (540) 855-7540
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/email-icon.png') }}" class="icon" height="50px">Email: <a href="mailto:sespickard24@gmail.com">sespickard24@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/insta-icon.avif') }}" class="icon">Instagram: <a href="https://www.instagram.com/hippoawesome24/">@hippoawesome24</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </content>
+        <nav>
+            <div style="grid-area: nav1;">
+                <a class="divlink" href="/">About</a>
+            </div>
+            <div style="grid-area: nav2;">
+                <a class="divlink" href="/projects">Projects</a>
+            </div>
+            <div style="grid-area: nav3;">
+                <a class="divlink" href="/contact">Contact</a>
+            </div>
+        </nav>
+        <footer>
+            <h6>
+                Copyright 2023 Seth Spickard
+            </h6>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About — Seth Spickard</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oranienbaum">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Seth Spickard
+            </h1>
+        </header>
+        <content>
+            <div class="main-aside">
+                <p>
+                    Seth Spickard is an aspiring software developer and data analyst based out of Southwestern Virginia. Being certified in HTML and CSS as well as trained in Python, he has worked to develop both back-end and front-end development skills and can be versatile on any team.
+                </p>
+                <p>
+                    Currently, Spickard is at Hampden-Sydney College studying both Computer Science and Mathematics. Throughout the semester and during the summer months, he researches under professors to develop machine learning software using computer vision. 
+                </p>
+                <p>
+                    Projects and respective descriptions can be found under the "Projects" tab in the navigation bar.
+                </p>
+            </div>
+            <div class="aside">
+                <img src="{{ url_for('static', filename='image/Groovy.JPG') }}" alt="It's me!" class="profilePic">
+            </div>
+        </content>
+        <nav>
+            <div style="grid-area: nav1;">
+                <a class="divlink" href="/">About</a>
+            </div>
+            <div style="grid-area: nav2;">
+                <a class="divlink" href="/projects">Projects</a>
+            </div>
+            <div style="grid-area: nav3;">
+                <a class="divlink" href="/contact">Contact</a>
+            </div>
+        </nav>
+        <footer>
+            <h6>
+                Copyright 2023 Seth Spickard
+            </h6>
+        </footer>
+    </body>
+</html>
