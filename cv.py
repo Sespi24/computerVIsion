@@ -72,7 +72,6 @@ def getItDone():
     identify_axes(ax_dict)
     
     plt.show()
-    print(gray)
 getItDone()
 
 '''def getItDone():
